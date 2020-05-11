@@ -10,7 +10,7 @@ import (
 )
 
 // LetterBox is a function that adds black bars to a pixelgl Window
-func LetterBox(win *pixelgl.Window, winWidth float32, winHeight float32) pixel.IM {
+func LetterBox(win *pixelgl.Window, winWidth float64, winHeight float64) pixel.Matrix {
 	sizeX := 1.
 	sizeY := 1.
 
