@@ -1,3 +1,5 @@
+// LoadTTF loads a TTF file and prepares it for use in Pixel
+
 package commonPixel
 
 import (
@@ -8,6 +10,7 @@ import (
 	"golang.org/x/image/font"
 )
 
+// LoadTTF loads a .ttf file and returns a font.Face
 func LoadTTF(path string, size float64) (font.Face, error) {
 	file, err := os.Open(path)
 	if err != nil {

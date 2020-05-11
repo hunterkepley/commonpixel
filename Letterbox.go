@@ -1,4 +1,4 @@
-// Letterbox is a function that makes a Pixel window scale properly using
+// Letterbox makes a Pixel window scale properly using
 // the letterbox approach (black bars) so you don't have to worry about
 // resizing images or making images for different aspect ratios
 

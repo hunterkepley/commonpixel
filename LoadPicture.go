@@ -1,3 +1,5 @@
+// LoadPicture loads a picture and prepares it for use in Pixel
+
 package commonPixel
 
 import (
@@ -8,6 +10,7 @@ import (
 	"github.com/faiface/pixel"
 )
 
+// LoadPicture loads an image file (.png for example) and returns a pixel.Picture
 func LoadPicture(path string) pixel.Picture {
 	file, err := os.Open(path)
 	if err != nil {
