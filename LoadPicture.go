@@ -22,4 +22,4 @@ func LoadPicture(path string) pixel.Picture {
 		return nil
 	}
 	return pixel.PictureDataFromImage(img)
-}
+} 

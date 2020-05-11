@@ -10,7 +10,7 @@ import (
 )
 
 // AABBCollisionCheck returns a bool after checking if two pixel.Rect's for overlap
-func AABBCollisionCheck(x pixel.Rect, y pixel.Rect) bool {
+func HasAABBCollision(x pixel.Rect, y pixel.Rect) bool {
 	if x.Min.X < y.Max.X &&
 		x.Max.X > y.Min.X &&
 		x.Min.Y < y.Max.Y &&
@@ -28,7 +28,7 @@ func CalculateDistance(a pixel.Vec, b pixel.Vec) float64 {
 // CircularCollisionCheck returns a bool after checking if two circles overlap
 // it checks based off of two radii and the distance between them (can be gathered)
 // using the CalculateDistance function or by other means
-func CirclularCollisionCheck(r1 float64, r2 float64, d float64) bool {
+func HasCirclularCollision(r1 float64, r2 float64, d float64) bool {
 	if d < r1+r2 {
 		return true
 	}

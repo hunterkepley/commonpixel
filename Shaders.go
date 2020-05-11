@@ -1,5 +1,5 @@
 package commonPixel
-
+ 
 var (
 	grayscaleShader = `
 	#version 330 core
